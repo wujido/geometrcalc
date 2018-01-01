@@ -1,0 +1,121 @@
+section {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  height: 100%;
+}
+
+.section-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+}
+
+.section-container>article {
+  text-align: center;
+}
+
+.duo-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section-container>article:nth-of-type(odd) h3 {
+  background: #2d7b9f;
+}
+
+.duo-container>article:nth-of-type(odd) h3 {
+  background: #2d7b9f;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-container {
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-row-gap: 3em;
+    grid-row-gap: 3em;
+  }
+  .body-container {
+    grid-row-gap: 2em;
+  }
+  .article-border {
+    width: 80%;
+    margin: auto;
+    max-height: 80vh;
+  }
+  .solo-container .article-border {
+    max-height: 100vh;
+    width: 100%;
+    height: 84vh;
+  }
+  .solo-container {
+    grid-column: 1/4;
+  }
+  .solo-container article {
+    height: 100%;
+  }
+  .duo-container {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-column-gap: 1em;
+  }
+  .section-container>article:nth-of-type(odd) h3 {
+    background: #225c77;
+  }
+  .duo-container>article:nth-of-type(odd) h3 {
+    background: #225c77;
+  }
+}
+
+@media only screen and (min-width: 2048px) {
+  .section-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ultimate-center {
+  margin: auto;
+  text-align: center;
+}
+
+form .ultimate-center {
+  margin-top: 2em;
+}
+
+.article-border {
+  background-color: #aaa;
+  height: 95vh;
+  margin: auto;
+  box-sizing: border-box;
+  box-shadow: 0 1em 3em rgba(50, 50, 50, .5);
+  display: grid;
+  grid-template-rows: 20vh 3fr;
+}
+
+.solo-container .article-border {
+  grid-template-rows: 9vh 1fr;
+}
+
+.solo-container h1, h2, h3 {
+  line-height: 9vh;
+  font-size: 4vh;
+}
+
+.article-border img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 0;
+}
+
+article h1, h2, h3 {
+  color: #fff;
+  background-color: #225c77;
+  font-size: 8vh;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+  line-height: 20vh;
+  margin: 0;
+}

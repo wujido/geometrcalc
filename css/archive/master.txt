@@ -1,0 +1,71 @@
+.body-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background: url('../pictures/pozadi.png') #009aca;
+    margin: 0px;
+}
+
+.invisibleLink{
+text-decoration: none;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  grid-column: 1/5;
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cleaner{
+  clear: both;
+}
+
+.content-container {
+  min-height: calc(100vh - 183px);
+  grid-column: 1/5;
+}
+
+article > h1, h2, h3 {
+  color: #1b4676;
+  text-shadow: 3px 3px 7px #666666;
+  font-size: 2em;
+ }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: arial;
+}
+
+input[type=submit], input[type=reset] {
+  border-radius: 20px;
+  background-color: #99999;
+  border: 1px solid black;
+  padding: 8px;
+  width: 140px;
+  margin-top: 10px;
+  font-size: 1em;
+  transition-duration: 0.05s;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  border: 2px solid black;
+  padding: 6px;
+}
